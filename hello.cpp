@@ -32,10 +32,10 @@ int main()
    //  cout << "volume of sphere : " << v << endl ;
    //  return 0 ;
 
-       cout << " enter side of cube : " ;
-       cin >> k ;
-       j = k*k*k ;
-       cout << " area of cube : " << endl ;
-       return 0;
+      //  cout << " enter side of cube : " ;
+      //  cin >> k ;
+      //  j = k*k*k ;
+      //  cout << " area of cube : " << j << endl ;
+      //  return 0;
        
  }
