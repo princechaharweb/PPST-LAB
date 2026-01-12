@@ -2,7 +2,7 @@
 using namespace std ;
 int main()
 {
-     float a,r,l,b,x,y,z,h,i,p;
+     float a,r,l,b,x,y,z,h,i,p,v,s,k,j;
     // cout << "enter radius of circle : " ;
     // cin >> r ;
     // a = 3.14*r*r ;
@@ -26,5 +26,16 @@ int main()
     // cout << "area of triangle : " << p << endl ;
     // return 0;
 
-}
+   //  cout << " enter radius of sphere : " ;
+   //  cin >> r ;
+   //  v = (4*3.14*r*r*r)/3;
+   //  cout << "volume of sphere : " << v << endl ;
+   //  return 0 ;
 
+       cout << " enter side of cube : " ;
+       cin >> k ;
+       j = k*k*k ;
+       cout << " area of cube : " << endl ;
+       return 0;
+       
+ }
