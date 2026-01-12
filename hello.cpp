@@ -20,11 +20,11 @@ int main()
     // z = y*y ;
     // cout << "area of square : " << z << endl ;
 
-    cout << "enter height and base of a triangle : " ;
-    cin >> h >> i ;
-    p = 0.5*h*i ;
-    cout << "area of triangle : " << p << endl ;
-    return 0;
+    // cout << "enter height and base of a triangle : " ;
+    // cin >> h >> i ;
+    // p = 0.5*h*i ;
+    // cout << "area of triangle : " << p << endl ;
+    // return 0;
 
 }
 
