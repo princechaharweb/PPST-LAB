@@ -1,41 +1,39 @@
-# include <iostream>
-using namespace std ;
-int main()
-{
-     float a,r,l,b,x,y,z,h,i,p,v,s,k,j;
-    // cout << "enter radius of circle : " ;
-    // cin >> r ;
-    // a = 3.14*r*r ;
-    // cout << "area of circle : " << a << endl ;
-    // return 0;
+#include <iostream>
+#include <cmath> 
+#include <iomanip> 
 
-    // cout << "enter length and breadth of rectangle : " ;
-    // cin >> l >> b ;
-    // x = l*b ;
-    // cout << "area of rectangle : " << x << endl ;
-    // return 0;
+using namespace std;
 
-    // cout << "enter side of square : " ;
-    // cin >> y ;
-    // z = y*y ;
-    // cout << "area of square : " << z << endl ;
+int main() {
+   // double principal, rate, time, amount, compoundInterest;
 
-    // cout << "enter height and base of a triangle : " ;
-    // cin >> h >> i ;
-    // p = 0.5*h*i ;
-    // cout << "area of triangle : " << p << endl ;
-    // return 0;
+    
+    cout << "Enter the principal amount: ";
+    cin >> principal;
 
-   //  cout << " enter radius of sphere : " ;
-   //  cin >> r ;
-   //  v = (4*3.14*r*r*r)/3;
-   //  cout << "volume of sphere : " << v << endl ;
-   //  return 0 ;
+    cout << "Enter the annual interest rate (in percentage): ";
+    cin >> rate;
 
-      //  cout << " enter side of cube : " ;
-      //  cin >> k ;
-      //  j = k*k*k ;
-      //  cout << " area of cube : " << j << endl ;
-      //  return 0;
-       
- }
+    cout << "Enter the time period (in years): ";
+    cin >> time;
+
+
+    rate = rate / 100;
+
+    
+    amount = principal * pow((1 + rate), time);
+
+    
+    compoundInterest = amount - principal;
+
+    
+    cout << fixed << setprecision(2);
+    cout << "\nTotal Amount after " << time << " years: " << amount << endl;
+    cout << "Compound Interest: " << compoundInterest << endl;
+
+    return 0;
+}
+
+    
+
+ 
