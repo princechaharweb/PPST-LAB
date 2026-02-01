@@ -163,20 +163,37 @@
 //     }  return 0; 
 // }
 
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int a, b;
+//     cout << "Enter two numbers: ";
+//     cin >> a >> b;
+
+//     if (a > b) {
+//         cout << "Maximum number is: " << a;
+//     } else {
+//         cout << "Maximum number is: " << b;
+//     }
+//     return 0;
+// }
+
 #include <iostream>
 using namespace std;
-int main() {
-    int a, b;
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
 
-    if (a > b) {
+int main() {
+    int a, b, c;
+    cout << "Enter three numbers: ";
+    cin >> a >> b >> c;
+    if (a >= b && a >= c)
         cout << "Maximum number is: " << a;
-    } else {
+    else if (b >= a && b >= c)
         cout << "Maximum number is: " << b;
-    }
+    else
+        cout << "Maximum number is: " << c;
     return 0;
 }
+
 
     
 
