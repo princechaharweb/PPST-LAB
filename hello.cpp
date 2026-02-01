@@ -95,37 +95,72 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+// int a,b,c,d;
+//     cout<<"Enter three numbers"<<endl;
+//     cin>>a>>b>>c;
+
+//     if(a>b)
+//     d=a;
+//     else
+//     d=b;
+//     if(d>c){
+//         cout<<"The maximum of three no. is "<<d<<endl;
+//     }
+//     else{
+//         cout<<"The maximum of three no. is "<<c<<endl;
+//     }
+
+//     if(a<b)
+//     d=a;
+//     else
+//     d=b;
+//     if(d<c){
+//         cout<<"Min of three no. is "<<d<<endl;
+//     }
+//     else{
+//         cout<<"Min of three no. is "<<c<<endl;
+//     }
+//   return 0; 
+
+// }
+
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main(){
-int a,b,c,d;
-    cout<<"Enter three numbers"<<endl;
-    cin>>a>>b>>c;
+float a, b, c;
+    float d, root1, root2;
 
-    if(a>b)
-    d=a;
-    else
-    d=b;
-    if(d>c){
-        cout<<"The maximum of three no. is "<<d<<endl;
-    }
-    else{
-        cout<<"The maximum of three no. is "<<c<<endl;
-    }
+    cout << "Enter value of a: ";
+    cin >> a;
 
-    if(a<b)
-    d=a;
-    else
-    d=b;
-    if(d<c){
-        cout<<"Min of three no. is "<<d<<endl;
-    }
-    else{
-        cout<<"Min of three no. is "<<c<<endl;
-    }
-  return 0; 
+    cout << "Enter value of b: ";
+    cin >> b;
 
+    cout << "Enter value of c: ";
+    cin >> c;
+
+    d = (b * b) - (4 * a * c);
+    if (d > 0) {
+        root1 = (-b + sqrt(d)) / (2 * a);
+        root2 = (-b - sqrt(d)) / (2 * a);
+        cout << "Roots are real and different\n";
+        cout << "Root 1 = " << root1 << endl;
+        cout << "Root 2 = " << root2 << endl;
+    }
+    else if (d == 0) {
+        root1 = -b / (2 * a);
+        cout << "Roots are real and equal\n";
+        cout << "Root = " << root1 << endl;
+    }
+    else {
+        cout << "Roots are imaginary (not real)" << endl;
+    }  return 0; 
 }
 
     
