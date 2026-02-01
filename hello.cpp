@@ -128,39 +128,54 @@
 
 // }
 
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+
+// int main(){
+// float a, b, c;
+//     float d, root1, root2;
+
+//     cout << "Enter value of a: ";
+//     cin >> a;
+
+//     cout << "Enter value of b: ";
+//     cin >> b;
+
+//     cout << "Enter value of c: ";
+//     cin >> c;
+
+//     d = (b * b) - (4 * a * c);
+//     if (d > 0) {
+//         root1 = (-b + sqrt(d)) / (2 * a);
+//         root2 = (-b - sqrt(d)) / (2 * a);
+//         cout << "Roots are real and different\n";
+//         cout << "Root 1 = " << root1 << endl;
+//         cout << "Root 2 = " << root2 << endl;
+//     }
+//     else if (d == 0) {
+//         root1 = -b / (2 * a);
+//         cout << "Roots are real and equal\n";
+//         cout << "Root = " << root1 << endl;
+//     }
+//     else {
+//         cout << "Roots are imaginary (not real)" << endl;
+//     }  return 0; 
+// }
+
 #include <iostream>
-#include <cmath>
 using namespace std;
+int main() {
+    int a, b;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
 
-int main(){
-float a, b, c;
-    float d, root1, root2;
-
-    cout << "Enter value of a: ";
-    cin >> a;
-
-    cout << "Enter value of b: ";
-    cin >> b;
-
-    cout << "Enter value of c: ";
-    cin >> c;
-
-    d = (b * b) - (4 * a * c);
-    if (d > 0) {
-        root1 = (-b + sqrt(d)) / (2 * a);
-        root2 = (-b - sqrt(d)) / (2 * a);
-        cout << "Roots are real and different\n";
-        cout << "Root 1 = " << root1 << endl;
-        cout << "Root 2 = " << root2 << endl;
+    if (a > b) {
+        cout << "Maximum number is: " << a;
+    } else {
+        cout << "Maximum number is: " << b;
     }
-    else if (d == 0) {
-        root1 = -b / (2 * a);
-        cout << "Roots are real and equal\n";
-        cout << "Root = " << root1 << endl;
-    }
-    else {
-        cout << "Roots are imaginary (not real)" << endl;
-    }  return 0; 
+    return 0;
 }
 
     
