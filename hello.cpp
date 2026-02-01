@@ -73,26 +73,59 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+
+// int main(){
+// double power;
+//     double ci,a,p,r,n,t;
+//     cout<<"Enter the principle value "<<endl;
+//     cin>>p;
+//     cout<<"Enter the rate "<< endl;
+//     cin>>r;
+//     cout<<"Enter the value of n "<<endl;
+//     cin>>n;
+//     cout<<"Enter the time period "<<endl;
+//     cin>>t;
+//     a = (1+r/(100*n));
+//     ci = p*pow(a,n*t);
+//     cout<<"Value of compound interest is "<< ci<<endl;
+
+//     return 0;
+// }
+
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main(){
-double power;
-    double ci,a,p,r,n,t;
-    cout<<"Enter the principle value "<<endl;
-    cin>>p;
-    cout<<"Enter the rate "<< endl;
-    cin>>r;
-    cout<<"Enter the value of n "<<endl;
-    cin>>n;
-    cout<<"Enter the time period "<<endl;
-    cin>>t;
-    a = (1+r/(100*n));
-    ci = p*pow(a,n*t);
-    cout<<"Value of compound interest is "<< ci<<endl;
+int a,b,c,d;
+    cout<<"Enter three numbers"<<endl;
+    cin>>a>>b>>c;
 
-    return 0;
+    if(a>b)
+    d=a;
+    else
+    d=b;
+    if(d>c){
+        cout<<"The maximum of three no. is "<<d<<endl;
+    }
+    else{
+        cout<<"The maximum of three no. is "<<c<<endl;
+    }
+
+    if(a<b)
+    d=a;
+    else
+    d=b;
+    if(d<c){
+        cout<<"Min of three no. is "<<d<<endl;
+    }
+    else{
+        cout<<"Min of three no. is "<<c<<endl;
+    }
+  return 0; 
+
 }
 
     
