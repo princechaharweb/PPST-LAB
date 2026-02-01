@@ -1,55 +1,76 @@
-#include <iostream>
-//#include <cmath> 
-//#include <iomanip> 
+// #include <iostream>
+// using namespace std;
 
+// int main(){
+//     double num1, num2;
+//     char op;
+//     cout << "Enter first number: ";
+//     cin >> num1;
+
+//     cout << "Enter operator ";
+//     cin >> op;
+
+//     cout << "Enter second number: ";
+//     cin >> num2;
+
+//     switch (op) {
+//         case '+':
+//             cout << "Result = " << num1 + num2;
+//             break;
+
+//         case '-':
+//             cout << "Result = " << num1 - num2;
+//             break;
+
+//         case '*':
+//             cout << "Result = " << num1 * num2;
+//             break;
+
+//         case '/':
+//             if (num2 != 0)
+//                 cout << "Result = " << num1 / num2;
+//             else
+//                 cout << "Error: Division by zero not allowed";
+//             break;
+//         default:
+//             cout << "Invalid operator";
+//     }
+//     return 0;}
+#include <iostream>
 using namespace std;
 
 int main() {
-   // double principal, rate, time, amount, compoundInterest;
+float side, radius, height, length, breadth;
+    float volumeCube, volumeCylinder;
+    float areaTriangle, areaRectangle;
 
-    
-   //// cout << "Enter the principal amount: ";
-    //cin >> principal;
+     cout << "Enter side of cube: ";
+    cin >> side;
 
-    //cout << "Enter the annual interest rate (in percentage): ";
-    //cin >> rate;
+    volumeCube = side * side * side;
+    cout << "Volume of Cube = " << volumeCube << endl;
 
-   // cout << "Enter the time period (in years): ";
-    //cin >> time;
+     cout << "Enter radius of cylinder: ";
+    cin >> radius;
+    cout << "Enter height of cylinder: ";
+    cin >> height;
 
+    volumeCylinder = 3.14 * radius * radius * height;
+    cout << "Volume of Cylinder = " << volumeCylinder << endl;
 
-    //rate = rate / 100;
+     cout << "Enter side of equilateral triangle: ";
+    cin >> side;
+    areaTriangle = (1.73 * side * side) / 4;
 
-    
-    //amount = principal * pow((1 + rate), time);
+    cout << "Area of Equilateral Triangle = " << areaTriangle << endl;
 
-    
-    //compoundInterest = amount - principal;
-
-    
-    //cout << fixed << setprecision(2);
-    //cout << "\nTotal Amount after " << time << " years: " << amount << endl;
-    //cout << "Compound Interest: " << compoundInterest << endl;
-
-//     int a, b;
-//       cout << "Enter two integers: ";
-//       cin >> a >> b;
-//       if (a > b)
-//       cout << a << " is the largest number." << endl;
-//       else(b > a);
-//       cout << b << " is the largest number." << endl;
-//       return 0;
-      int a,b,c,d;
-      cout<<"Enter three numbers:";
-      cin>>a>>b>>c;
-      if(a>=b)
-      cout<<a<<" is the largest number."<<endl;
-      else if(b>=c)           
-      cout<<b<<" is the largest number."<<endl;
-      else        
-
-      cout<<c<<" is the largest number."<<endl;
-      return 0;   
+     cout << "Enter length of rectangle: ";
+    cin >> length;
+    cout << "Enter breadth of rectangle: ";
+    cin >> breadth;
+    areaRectangle = length * breadth;
+    cout << "Area of Rectangle = " << areaRectangle << endl;
+    return 0;
 }
 
     
